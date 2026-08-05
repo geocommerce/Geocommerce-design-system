@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Core — Button, ArrowLink, Badge, Eyebrow" subtitle="Pill CTAs, arrow links, chips and section kickers" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:22px 26px;background:var(--surface-page)}.row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:14px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, ArrowLink, Badge, Eyebrow, Card } = window.GeocommerceDesignSystem_0dc456;
+function Demo(){return <>
+<div className="row"><Button variant="primary">Start Your Project</Button><Button variant="secondary">View Case Studies</Button><Button variant="ghost">Learn more</Button><Button variant="primary" disabled>Disabled</Button></div>
+<div className="row"><Button size="sm">Small</Button><Button size="md" iconRight="→">Medium</Button><Button size="lg">Large</Button></div>
+<div className="row" style={{background:'var(--green-900)',padding:'16px',borderRadius:'var(--radius-md)'}}><Button variant="inverse">Book a Consultation</Button><ArrowLink tone="inverse">View portfolio</ArrowLink></div>
+<div className="row"><ArrowLink>View Case Study</ArrowLink><ArrowLink tone="ink" size="sm">Explore strategy</ArrowLink></div>
+<div className="row"><Badge>Shopify-focused expertise</Badge><Badge tone="brand" dot>Shopify Plus Certified</Badge><Badge tone="solid">Redesign</Badge><Badge tone="outline">CRO</Badge></div>
+<div style={{marginTop:'6px'}}><Eyebrow rule>Our Methodology</Eyebrow></div>
+</>}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

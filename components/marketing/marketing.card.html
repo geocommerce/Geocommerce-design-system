@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Marketing — Stats, Service, Case study, Process" subtitle="Page-section building blocks from geocommerce.co" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:22px 26px;background:var(--surface-page)}.row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:14px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { StatBlock, ServiceCard, CaseStudyCard, ProcessStep, Testimonial, LogoWall, Accordion } = window.GeocommerceDesignSystem_0dc456;
+function Demo(){return <>
+<div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'18px',paddingBottom:'20px',borderBottom:'1px solid var(--border-hairline)'}}>
+<StatBlock value="+24%" label="Avg conversion lift" /><StatBlock value="150+" label="Plus stores launched" /><StatBlock value="3.2s" label="Avg load time" /><StatBlock value="$500M+" label="Merchant GMV" />
+</div>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',margin:'20px 0'}}>
+<ServiceCard index="01" category="Design" title="Shopify redesigns that convert" body="Premium design, UX clarity, storytelling, stronger brand presentation." href="#" />
+<CaseStudyCard category="Beauty / Redesign" title="Premium skincare redesign" excerpt="A complete visual and structural overhaul." ratio="16 / 9" />
+</div>
+<div style={{margin:'20px 0'}}><LogoWall columns={6} logos={['Stillersafe','Suntannd','Plentum','Mulya','Rococo','Cleansource']} /></div>
+<ProcessStep number="01" title="Discovery and growth audit" body="We analyze current metrics and identify key opportunities for Shopify growth." active />
+<div style={{marginTop:'12px'}}><Accordion items={[{q:'How long does a redesign take?',a:'Most storefront redesigns run 8–12 weeks from discovery to launch.'},{q:'Do you work on Shopify Plus?',a:'Yes — Plus builds, migrations and CRO programmes.'}]} /></div>
+<div style={{marginTop:'20px',background:'var(--green-900)',padding:'28px',borderRadius:'var(--radius-lg)'}}>
+<Testimonial tone="inverse" quote="“They reimagined our entire customer journey on Shopify Plus.”" name="Founder" role="Premium D2C fashion brand" />
+</div>
+</>}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>
